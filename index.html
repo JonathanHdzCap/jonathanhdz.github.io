@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Copyright" content="Portafolio" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Jonathan Hernández" />
+  <meta name="rating" content="general" />
+  <meta name="language" content="Spanish" />
+  <meta name="application-name" content="Portafolio" />
+  <meta name="keywords" content="company" />
+  <meta content="./assets/img/inazuma-cover.png" property="og:image" />
+  <meta content="https://ranyeh24.github.io/inazuma-tailwind" property="og:url" />
+  <meta content="website" property="og:type" />
+
+  <meta name="msapplication-TileColor" content="#3d63dd" />
+  <meta name="msapplication-TileImage" content="./assets/favicon/mstile-144x144.png" />
+  <meta name="theme-color" content="#3d63dd" />
+
+  <!-- Page title -->
+  <title>About Me | Jonathan Hernández</title>
+
+
+
+  <!-- CSS Plugins -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+  <!-- Page loading -->
+  <div
+    class="page-loading fixed top-0 bottom-0 left-0 right-0 z-[99999] flex items-center justify-center bg-primary-light-1 dark:bg-primary-dark-1 opacity-100 visible pointer-events-auto"
+    role="status" aria-live="polite" aria-atomic="true" aria-label="Loading...">
+    <div class="grid-loader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="ic-navbar absolute left-0 top-0 z-40 flex w-full items-center bg-transparent" role="banner"
+    aria-label="Navigation bar">
+    <div class="container">
+      <div class="ic-navbar-container relative -mx-5 flex items-center justify-between">
+        <div class="w-16 lg:w-26 max-w-full px-5">
+          <a href="." class="ic-navbar-logo block w-full py-5 text-primary-color">
+
+            <svg id="NavbarBrand" xmlns="http://www.w3.org/2000/svg" viewBox="20.35 200.241 385.226 114.168"
+              style="width: 70%; height: auto; max-width: 300px;" xmlns:bx="https://boxy-svg.com">
+              <path style="fill: rgb(255, 255, 255); transform-box: fill-box; transform-origin: 50% 50%;"
+                d="M 216.077 210.348 L 247.866 210.348 L 214.244 258.765 L 248.477 307.182 L 217.3 307.829 L 186.121 264.576 L 186.732 250.372 L 216.077 210.348 Z"
+                transform="matrix(-1, 0, 0, -1, -0.000016, -0.000007)"></path>
+              <text style="fill: rgb(255, 255, 255); font-family: ADLaM Display; font-size: 45px; white-space: pre;"
+                x="67.47" y="161.371" transform="matrix(1.722996, 0, 0, 1.873155, -89.737282, -22.613905)">crea</text>
+              <text style="fill: rgb(255, 255, 255); font-family: ADLaM Display; font-size: 45px; white-space: pre;"
+                transform="matrix(1.722996, 0, 0, 1.873155, -328.228912, -71.959015)">
+                <tspan x="345.086" y="188.136">tive</tspan>
+                <tspan x="345.086" dy="1em">​</tspan>
+              </text>
+              <defs>
+                <style bx:fonts="ADLaM Display">
+                  @import url(https://fonts.googleapis.com/css2?family=ADLaM+Display%3Aital%2Cwght%400%2C400&amp;display=swap);
+                </style>
+              </defs>
+              <line
+                style="stroke-linecap: round; fill: rgb(255, 255, 255); stroke: rgb(255, 255, 255); stroke-width: 7px;"
+                x1="271.637" y1="294.069" x2="392.066" y2="295.676"></line>
+            </svg>
+
+          </a>
+        </div>
+
+        <div class="flex w-full items-center justify-between px-5">
+          <div>
+            <button type="button"
+              class="ic-navbar-toggler absolute right-4 top-1/2 block -translate-y-1/2 rounded-md px-3 py-[6px] text-[22px]/none text-primary-color ring-primary focus:ring-2 lg:hidden"
+              data-web-toggle="navbar-collapse" data-web-target="navbarMenu" aria-expanded="false"
+              aria-label="Toggle navigation menu">
+              <i class="lni lni-menu"></i>
+            </button>
+
+            <nav id="navbarMenu"
+              class="ic-navbar-collapse absolute right-4 top-[80px] w-full max-w-[250px] rounded-lg hidden bg-primary-light-1 py-5 shadow-lg dark:bg-primary-dark-1 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6">
+              <ul class="block lg:flex" role="menu" aria-label="Navigation menu">
+                <li class="group relative">
+                  <a href="#home"
+                    class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mx-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70 active"
+                    role="menuitem">Acerca de mi</a>
+                </li>
+
+                <li class="group relative">
+                  <a href="#experiencia"
+                    class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                    role="menuitem">Experiencia</a>
+                </li>
+
+                <li class="group relative">
+                  <a href="#proyectos"
+                    class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                    role="menuitem">Proyectos</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="flex items-center justify-end pr-[52px] lg:pr-0">
+            <button type="button" class="inline-flex items-center text-primary-color text-[24px]/none"
+              aria-label="Switch theme" data-web-trigger="web-theme"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main relative">
+    <!-- Hero section -->
+    <section id="home"
+      class="relative overflow-hidden bg-primary text-primary-color pt-[120px] md:pt-[130px] lg:pt-[160px]">
+      <div class="container">
+        <div class="-mx-5 flex flex-wrap items-center">
+
+          <div class="w-full px-5">
+            <div class="scroll-revealed mx-auto max-w-[780px] text-center">
+              <h1
+                class="mb-6 text-3xl font-bold leading-snug text-primary-color sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-tight">
+                Hola, soy Jonathan Hernández, Software Developer
+              </h1>
+
+              <ul class="mb-10 flex flex-wrap items-center justify-center gap-4 md:gap-5">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 24 24">
+                    <g fill="none">
+                      <path fill="#FFF"
+                        d="M14.282 19.63a3.66 3.66 0 0 1-2.384.502a5 5 0 0 1-1.001-.21a4 4 0 0 1-.922-.421a2.84 2.84 0 0 1-1.432-1.853c0-.29-.08-.561-.08-.862c.048-.759.015-1.521-.1-2.273a2.14 2.14 0 0 0-.601-1.112a.82.82 0 0 0-.511-.2q-.309.017-.611.08H3.876a6.5 6.5 0 0 1-.45-.871a3.5 3.5 0 0 1-.221-.902a2.8 2.8 0 0 1 0-.71q.052-.354.19-.682a2.9 2.9 0 0 1 1.262-1.592a3.24 3.24 0 0 1 2.924 0c.511.23 3.456 1.793 1.493 4.567a.34.34 0 0 0 .1.47a5.5 5.5 0 0 1 1.512 2.174q.239.622.38 1.272c.103.364.277.705.512 1.001a1.76 1.76 0 0 0 1.873.541q.229-.056.45-.14l.4-.19a.383.383 0 0 0 .191-.511a.39.39 0 0 0-.51-.19l-.652.13a.81.81 0 0 1-.81-.34a2.7 2.7 0 0 1-.281-.852a5.4 5.4 0 0 0-.411-1.162a6.2 6.2 0 0 0-1.001-1.262a5.4 5.4 0 0 0-.922-.67s.08 0 .11-.07c1.623-2.304.21-4.748-1.883-5.8a4.42 4.42 0 0 0-3.455-.31a3.75 3.75 0 0 0-2.283 2.564c-.082.3-.13.61-.14.921a3.2 3.2 0 0 0 .07.942c.083.375.214.739.39 1.081q.168.307.37.591q-.502.013-1 .08q-.433.05-.842.2a1.1 1.1 0 0 0-.491.361a2.7 2.7 0 0 0-.41.851a10 10 0 0 0-.251 1.743a15.4 15.4 0 0 0 .15 4.377a6.9 6.9 0 0 0 1.132 2.754a.35.35 0 0 0 .48.08a.34.34 0 0 0 .08-.47a5.94 5.94 0 0 1-.84-2.505a14 14 0 0 1 .13-4.076c.06-.37.13-.881.25-1.342c.048-.208.13-.408.24-.59c-.09-.161.401-.08.551-.1q.464-.066.932-.071h1.512c2.724-.1 2.474-.31 2.604.44q.112.873.12 1.753c.04.998.184 1.988.43 2.955c.232.958.54 1.896.922 2.804a.385.385 0 1 0 .721-.27a19 19 0 0 1-.59-2.143q.18.205.39.38a3.9 3.9 0 0 0 1.242.631c.436.142.893.21 1.352.2a4.37 4.37 0 0 0 2.905-1.121a.38.38 0 0 0 .07-.541a.39.39 0 0 0-.591-.03m-.12-15.364a.39.39 0 0 0 .09-.54a.41.41 0 0 0-.551-.09l-2.554 1.221q-.527.268-1.002.621a.75.75 0 0 0-.25.51a.7.7 0 0 0 .18.572c.13.15.531.48.561.51l2.244 1.843a.34.34 0 0 0 .48-.48L11.527 6.14l-.1-.06l.37-.16zm2.944 4.056a.38.38 0 0 0-.09.531a.4.4 0 0 0 .54.09l2.555-1.221q.53-.258 1.001-.611a.77.77 0 0 0 .25-.481a.68.68 0 0 0-.18-.561a7 7 0 0 0-.56-.51l-2.244-1.854a.342.342 0 0 0-.571.1a.34.34 0 0 0 .09.381l1.833 2.254l.1.07a3 3 0 0 0-.37.16zm.16-5.979a.33.33 0 0 0-.44.19c-.38.652-.762 1.283-1.082 2.004c-.14.29-.25.59-.36.891c-.11.3-.2.6-.281.911c-.19.732-.32 1.453-.46 2.194a.38.38 0 0 0 .26.48a.39.39 0 0 0 .48-.26c.28-.681.591-1.342.872-2.003c.12-.29.24-.58.35-.871a9 9 0 0 0 .29-.892c.211-.71.361-1.422.562-2.133a.352.352 0 0 0-.19-.51" />
+                      <path fill="#1d222e"
+                        d="M23.887 4.988c-.591-5.388.81-3.655-4.167-4.366A40 40 0 0 0 14.973.21c-.801 0-1.593 0-2.384.07s-1.622.17-2.393.29c-.772.12-1.463.17-2.234.291c-1.933.33-2.003-.32-2.073 2.123a5 5 0 0 0 0 .651q.015.298.07.591c.1.5.28 1.002.38 1.452a.34.34 0 0 0 .391.31a.33.33 0 0 0 .32-.35q.16-.864.181-1.742a5.7 5.7 0 0 0-.11-1.002c-.05-.36-.16-.711-.16-1.072a9 9 0 0 1 1.161-.15c.742-.05 1.483-.05 2.204-.08c.72-.03 1.552-.05 2.333-.06s1.553 0 2.324 0c1.552 0 3.095 0 4.657.12c.851.06 1.753 0 2.624 0h.14c.06.47.13.942.16 1.422c.03.481 0 1.002.06 1.563s.05 1.001.08 1.562c.11 1.603.231 3.195.271 4.748a.33.33 0 0 0 .08.18c-1.456.209-2.93.26-4.397.15l-1.822-.06h-1.232c-1.12.023-2.238.12-3.345.29a.341.341 0 1 0 .05.671c.751 0 1.492 0 2.223.12q-.11.386-.17.782a3.4 3.4 0 0 0 0 .55v.551c0 .441.11.852.15 1.282a.39.39 0 0 0 .5.407a.37.37 0 0 0 .261-.336c.12-.441.23-.862.31-1.312a3.4 3.4 0 0 0 0-.561q.03-.281 0-.561a6 6 0 0 0-.15-.721l.772.07q1.319.112 2.644.09a16 16 0 0 0 4.457-.681a.38.38 0 0 0 .29-.46c0-.06-.06-.091-.09-.131a.35.35 0 0 0 .23-.32c.11-1.172.24-2.384.26-3.606a18 18 0 0 0-.11-2.354" />
+                      <path fill="#FFF"
+                        d="M22.534 17.858a1.4 1.4 0 0 0-.55-.851a1.5 1.5 0 0 0-.762-.23q-.609.008-1.211.1l-3.576.5a.33.33 0 0 0-.29.38a.33.33 0 0 0 .38.291l3.626-.04h.74c.872 0 .372-.12.472 1.292c.09 1.002.881 1.002-.942 1.062l-3.846.29a.39.39 0 0 0-.337.548a.38.38 0 0 0 .367.224l3.796.06q.677.075 1.352 0c.296-.051.571-.187.791-.391c.154-.205.235-.455.23-.711a11 11 0 0 0-.12-1.172q0-.681-.12-1.352" />
+                    </g>
+                  </svg>
+                  <!-- <a href="javascript:boid(0)"
+                    class="video-popup flex items-center gap-4 rounded-md bg-primary-color/[0.15] px-5 py-3 text-base font-medium text-primary-color hover:bg-primary-color hover:text-primary md:px-7 md:py-[14px]"
+                    role="button"><i class="lni lni-download text-lg/none"></i> Descargar CV</a> -->
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="w-full px-5">
+            <div class="scroll-revealed relative z-10 mx-auto max-w-[845px]">
+              <div class="mt-10 mx-auto max-w-full">
+                <br />
+                <br />
+                <h4 class="mb-2">
+                  Acerca de mi
+                </h4>
+                <p>
+                  Inicie mi carrera profesional como ingeniero de software hace 8 años, durante este tiempo he
+                  colaborado
+                  con personas talentosas y con una gran pasión por el desarrollo de software, he participado en
+                  proyectos
+                  de gran escala de manera remota y presencial tanto para sector público y privado, me apasiona crear
+                  productos digitales
+                  que ayuden a las personas a mejorar su vida diaria. Soy una persona tranquila, me gusta trabajar en
+                  equipo y
+                  siempre estoy trabajando para mejorar mis habilidades y conocimientos.
+                </p>
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services section -->
+    <section id="experiencia" class="section-area">
+      <div class="container">
+        <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+          <h6 class="mb-2 block text-lg font-semibold text-primary">
+            Experiencia profesional más reciente
+          </h6>
+        </div>
+
+        <div class="row">
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <div class="group hover:-translate-y-1">
+              <div class="w-full">
+                <h4 class="text-[1.25rem]/tight font-semibold mb-3">
+                  B-Process. CDMX
+                  <br>
+                  Octubre 2023 – Actualidad.
+                </h4>
+                <p class="text-sm">
+                  Desarrollar y mantener los componentes críticos de los sistemas web principales de CONEVAL, así como
+                  la implementación de nuevas funcionalidades que ayudaron al usuario a mejorar su experiencia de uso,
+                  migración de aplicaciones y colaboración con app móvil de CONEVAL. Colaborar estrechamente con equipos
+                  de calidad y análisis para identificar y mitigar posibles riesgos en las operaciones para lograr
+                  mejores resultados en las mediciones de Pobreza en
+                  México.
+                </p>
+                <!-- Banners de color azul con texto indicando tecnologías manejadas -->
+                <ul class="flex flex-wrap gap-1 py-3">
+                  <li class="px-4 py-2 text-xs font-bold text-white bg-primary rounded-full">
+                    ASP.NET
+                  </li>
+                  <li class="px-4 py-2 text-xs font-bold text-white bg-primary rounded-full">
+                    Sql Server
+                  </li>
+                  <li class="px-4 py-2 text-xs font-bold text-white bg-primary rounded-full">
+                    Spring Boot
+                  </li>
+                  <li class="px-4 py-2 text-xs font-bold text-white bg-primary rounded-full">
+                    SonarQube
+                  </li>
+                  <li class="px-4 py-2 text-xs font-bold text-white bg-primary rounded-full">
+                    html & css
+                  </li>
+                  <li class="px-4 py-2 text-xs font-bold text-white bg-primary rounded-full">
+                    Javascript & React
+                  </li>
+                  <li class="px-4 py-2 text-xs font-bold text-white bg-primary rounded-full">
+                    GitLab
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <div class="group hover:-translate-y-1">
+              <div class="w-full">
+                <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                  ISITA Tech. Nuevo León, México
+                  <br>
+                  Septiembre 2022 – Octubre 2023.
+                </h4>
+                <p class="text-sm">
+                  Desarrollo y despliegue de sistemas de inventario, inspección de calidad y generación de reportes de
+                  partes automotrices, los
+                  cuales ayudaron reduciendo los tiempos en las operaciones, evitando perdidas de producción y
+                  detectando fallas en el proceso de fabricación para clientes como GIS (Grupo Industrial Saltillo),
+                  Draxton y Evercast. Participe en la integración y creación de microservices para sistemas de gestión
+                  de ordenes de compra usando herramientas y tecnologías de Azure, así como en pasarelas de pagos.
+                </p>
+                <!-- Banners de color azul con texto indicando tecnologías manejadas -->
+                <ul class="flex flex-wrap gap-1 py-3">
+                  <li class="px-4 py-2 text-xs font-bold text-white bg-primary rounded-full">
+                    .Net Blazor
+                  </li>
+                  <li class="px-4 py-2 text-xs font-bold text-white bg-primary rounded-full">
+                    Sql Server
+                  </li>
+                  <li class="px-4 py-2 text-xs font-bold text-white bg-primary rounded-full">
+                    CSS & HTML & JavaScript
+                  </li>
+                  <li class="px-4 py-2 text-xs font-bold text-white bg-primary rounded-full">
+                    Xamarin Forms
+                  </li>
+                  <li class="px-4 py-2 text-xs font-bold text-white bg-primary rounded-full">
+                    Azure Functions & Service Bus
+                  </li>
+                  <li class="px-4 py-2 text-xs font-bold text-white bg-primary rounded-full">
+                    XUnit
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <div class="group hover:-translate-y-1">
+              <div class="w-full">
+                <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                  Capgemini. Aguascalientes, México
+                  <br>
+                  Octubre 2021 – Septiembre 2022.
+                </h4>
+                <p class="text-sm">
+                  Brindar soporte técnico a clientes compañía Vitro mediante atención de tickets, para los departamentos
+                  de ventas,
+                  de facturación y de producción de vidrio, así como a clientes de Grupo Bimbo usando
+                  herramientas como Service Now, desarrollo de aplicaciones de escritorio en .Net para optimizar
+                  tareas de equipos funcionales reduciendo el tiempo de resolución hasta de un 50%, monitoreo de
+                  sistemas desplegados en
+                  Azure mediante Application Insights.
+                </p>
+                <!-- Banners de color azul con texto indicando tecnologías manejadas -->
+                <ul class="flex flex-wrap gap-1 py-3">
+                  <li class="px-4 py-2 text-xs font-bold text-white bg-primary rounded-full">
+                    Windows Forms
+                  </li>
+                  <li class="px-4 py-2 text-xs font-bold text-white bg-primary rounded-full">
+                    Windows Services
+                  </li>
+                  <li class="px-4 py-2 text-xs font-bold text-white bg-primary rounded-full">
+                    Azure
+                  </li>
+                  <li class="px-4 py-2 text-xs font-bold text-white bg-primary rounded-full">
+                    .Net Framework
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio section -->
+    <section id="proyectos" class="section-area">
+      <div class="container">
+        <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+          <h6 class="mb-2 block text-lg font-semibold text-primary">
+            Algunos proyectos recientes
+          </h6>
+          <p>
+            Proyectos que hacen que la tecnología deje de ser complicada y empiece a funcionar de verdad.
+          </p>
+        </div>
+
+        <div class="scroll-revealed portfolio-grid row">
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="branding">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="./assets/img/portfolio/Admin Smart Access Banner.png" alt="Smart Access Control System"
+                  class="w-full h-full object-cover" />
+                <div
+                  class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible">
+                  <div class="flex flex-wrap gap-2 p-4">
+                    <div class="inline-block relative">
+                      <a href="./assets/img/portfolio/adminSA.png"
+                        class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-zoom-in"></i>
+                      </a>
+                    </div>              
+                  </div>
+                </div>
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2">
+                  <a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">Smart Access Admin</a>
+                </h4>
+                <p>
+                  Sistema Administrativo para la gestión de usuarios y monitoreo de accesos a condominios.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="research">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="./assets/img/portfolio/presentacion_movil.png" alt="Web Development"
+                  class="w-full h-full object-cover" />
+                <div
+                  class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible">
+                  <div class="flex flex-wrap gap-2 p-4">
+                    <div class="inline-block relative">
+                      <a href="./assets/img/portfolio/presentacion_movil.png"
+                        class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-zoom-in"></i>
+                      </a>
+                    </div>                    
+                  </div>
+                </div>
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2">
+                  <a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">Smart Access Móvil</a>
+                </h4>
+                <p>
+                 Aplicación móvil de gestión de visitantes de los condominios.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="marketing">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="./assets/img/portfolio/infoPobreza.png" alt="App Development"
+                  class="w-full h-full object-cover" />
+                <div
+                  class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible">
+                  <div class="flex flex-wrap gap-2 p-4">
+                    <div class="inline-block relative">
+                      <a href="./assets/img/portfolio/infoPobreza.png"
+                        class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-zoom-in"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2">
+                  <a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">Info Pobreza</a>
+                </h4>
+                <p>
+                  Medición de pobreza en México.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary-dark-2 text-white">
+    <div class="w-full border-t border-solid border-alpha-dark"></div>
+    <div class="container py-8">
+      <div class="flex flex-wrap">
+        <div class="w-full">
+          <div class="my-1 flex justify-center md:justify-center">
+            <p class="text-body-dark-11">
+              &#169; 2025. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button"
+    class="inline-flex w-12 h-12 rounded-md items-center justify-center text-lg/none bg-primary text-primary-color hover:bg-primary-light-10 dark:hover:bg-primary-dark-10 focus:bg-primary-light-10 dark:focus:bg-primary-dark-10 fixed bottom-[117px] right-[20px] hover:-translate-y-1 opacity-100 visible z-50 is-hided"
+    data-web-trigger="scroll-top" aria-label="Scroll to top">
+    <i class="lni lni-chevron-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+  <script src="./assets/js/main.js"></script>
+  <script>
+    // Scroll Reveal
+    const sr = ScrollReveal({
+      origin: "bottom",
+      distance: "16px",
+      duration: 1000,
+      reset: false,
+    });
+
+    sr.reveal(`.scroll-revealed`, {
+      cleanup: true,
+    });
+
+    const myGallery3 = GLightbox({
+      selector: ".portfolio-box",
+      type: "image",
+      width: 900,
+    });
+
+    // Testimonial
+    const testimonialSwiper = new Swiper(".testimonial-carousel", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>
